@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calender table</title>
+</head>
+<body>
+<table class="cal">
+<caption> July 2020</caption>
+<thead>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td class="old">28</td>
+<td class="old">29</td>
+<td class="old">30</td>
+
+<td>1</td>
+<td>2*<span>Lunch with friends</span></td>
+<td>3</td>
+<td>4</td>
+
+</tr>
+<tr>
+<td >5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10*<span>Meet brother after long time</span></td>
+<td>11</td>
+</tr>
+<tr>
+<td >12</td>
+<td>13</td>
+<td>14</td>
+<td>15*<span>party</span></td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+
+</tr>
+<tr>
+<td >19</td>
+<td>20</td>
+<td>21*<span>pizza party</span></td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td class="holiday">25*<span>Naga Panchami</span></td>
+</tr>
+<tr>
+<td >26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>30*<span>birthday party</span></td>
+<td class="holiday">31*<span>Bakrid</span></td>
+<td class="new">1</td>
+
+</tr>
+<style>
+table.cal{
+color:#06425c;
+border-spacing:0;
+border: 3px solid black;
+-webkit-border-radius:25px 25px 0 0;
+border-radius: 0 0 25px 25px;
+} 
+tr:nth-child(odd){
+background:#F2F2F2;
+}
+tr:nth-child(even){
+background: #cdbb79;
+}
+tr:last-child{
+-webkit-border-radius: 25px 25px 0 0;
+border-radius: 0 0 25px 25px;
+}
+tr:last-child>td:first-child{
+-webkit-border-radius: 0 0 0 25px;
+border-radius: 0 0 0 25px;
+}
+tr:last-child>td:last-child{
+-webkit-border-radius: 0 0 25px 0;
+border-radius: 0 0 25px 0;
+
+}
+.cal caption{
+text-transform: uppercase;
+background-color: #666666;
+color:#ffffff;
+font-size:160%;
+-webkit-border-radius: 25px 25px 0 0;
+border-radius: 25px 25px 0 0;
+
+}
+.cal th, .cal td{
+margin:2px;
+padding-bottom: 2px;
+}
+th{
+text-align:center;
+background: #ffffff;
+}
+.cal td{
+width: 75px;
+height: 75px;
+vertical-align: top;
+}
+.old{
+padding:0px;
+margin:0px;
+background-color: #51a390;
+color:rgba(0,0,0,.25);
+background:url("../imgs/holiday.png");
+border-spacing:0px;
+}
+.holiday{
+margin:0px;
+padding:0px;
+background-color:#faebd7;
+}
+span{
+display: block;
+text-align:center;
+color:#800000;
+visibility:hidden;
+}
+
+.new{
+padding:0px;
+margin:0px;
+background-color:#51a390;
+border-spacing:0px;
+border-radius: 0 0 25px 0;
+
+}
+td:active>span{
+visibility:visible;
+}
+
+</style>
+</body>
+</html>
